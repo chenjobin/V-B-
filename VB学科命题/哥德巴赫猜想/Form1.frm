@@ -159,7 +159,7 @@ Private Sub command1_click()    '调用函数过程的主过程
             If HQSS(S) = 1 Then Exit For    '如果函数值为1，则脱离循环
         End If
     Next i
-    S = HSJG(i, N)                          '调用显示函数程序
+    S = HSJG(i, N)                         '调用显示函数程序
     If N = 4 Then Label4.Caption = "4=2+2"   '如果N=4，重新显示结果
 End Sub
 
@@ -182,11 +182,11 @@ N = Text1.Text
 For i = 3 To N Step 2
     S = i: Call ZQSS(S, K)       '调判断素数子程序
     If K = 1 Then
-        S = N - 1: Call ZQSS(S, K)      '调判断素数子程序
+        S = N - i: Call ZQSS(S, K)      '调判断素数子程序
         If K = 1 Then Exit For
     End If
 Next i
-Call XSJG(i, N)     '调显示子程序
+Call HSJG(i, N)     '调显示子程序
 If N = 4 Then Label4.Caption = "4=2+2"
 End Sub
 Public Sub ZQSS(ByVal S1 As Integer, K1 As Integer)  '判断是否为素数的子过程
