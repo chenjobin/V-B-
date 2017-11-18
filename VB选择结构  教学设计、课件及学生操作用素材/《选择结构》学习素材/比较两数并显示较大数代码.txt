@@ -1,0 +1,7 @@
+ Let a = Text1.Text '将输入文本框1中的账号赋给变量a
+  Let b = Text2.Text '将输入文本框2中的密码赋给变量b
+  If a > b Then
+    Text3.Text = a
+  Else
+    Text3.Text = b
+  End If

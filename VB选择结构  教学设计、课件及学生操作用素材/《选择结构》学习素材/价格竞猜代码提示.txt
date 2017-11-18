@@ -1,0 +1,17 @@
+Private Sub Command1_Click()
+x = Text1.Text
+b = Val(x)
+If a = b Then
+Label2.Caption = "恭喜你猜中了！"
+Else
+cc
+End If
+End Sub
+Rem
+Public Sub cc()
+If b < a Then
+Label2.Caption = "你猜的价格低了，请再猜！"
+Else
+Label2.Caption = "你猜的价格高了，请再猜！"
+End If
+End Sub
