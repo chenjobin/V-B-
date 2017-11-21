@@ -76,7 +76,7 @@ Private Sub Command1_Click()
   Let user = Text1.Text '将输入文本框1中的账号赋给变量a
   Let password = Text2.Text '将输入文本框2中的密码赋给变量b
   Rem 对输入的用户名和口令进行判断
-  If (                                            ) Then
+  If (user = "666" And password = "666") Then
     dlcg '调用登录成功模块
   Else
     dlsb '调用登录失败模块
