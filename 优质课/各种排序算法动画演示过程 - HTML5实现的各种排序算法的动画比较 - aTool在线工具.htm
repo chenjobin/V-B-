@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0029)http://www.atool.org/sort.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+		<title>各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较</title>
+		<link rel="author" href="https://plus.google.com/117054904202244414422?rel=author">
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="http://www.atool.org/favicon.ico">
+<link rel="bookmark" href="http://www.atool.org/favicon.ico">
+<link rel="stylesheet" href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/ad-block.css">
+<script type="text/javascript" async="" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/wb.js"></script><script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/hm.js"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+
+	function async_load(url){ 
+		var s = document.createElement('script'); 
+		s.type = 'text/javascript'; 
+		s.async = true; 
+		s.src = url; 
+		var x = document.getElementsByTagName('script')[0]; 
+		x.parentNode.insertBefore(s, x); 
+	}
+	function sync_load_js(url) {
+		if (window.attachEvent) 
+			window.attachEvent('onload', function() {async_load(url)}); 
+		else 
+			window.addEventListener('load', function() {async_load(url)}, false); 
+	}
+
+	function async_do_func(func) {
+		if (window.attachEvent) 
+			window.attachEvent('onload', func); 
+		else 
+			window.addEventListener('load', func, false); 
+	}
+	sync_load_js("http://tjs.sjs.sinajs.cn/open/api/js/wb.js");
+</script>
+	<link href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/css.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/jquery-ui-1.8.11.custom.css">	
+		<script type="text/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/jquery.min.js"></script>
+		<script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/jquery-ui-1.8.11.custom.min.js"></script>
+		
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/CustomEvents.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/UndoFunctions.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimatedObject.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimatedLabel.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimatedCircle.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimatedRectangle.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimatedLinkedList.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/HighlightCircle.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/Line.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/ObjectManager.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/AnimationMain.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/Algorithm.js"> </script>
+		<script type="application/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/ComparisonSort.js"> </script>
+	<style>#ds-reset .ds-br,#ds-reset .ds-os,#ds-reset .ds-webmaster{display:inline-block;border-radius:.3em;margin-left:.5em;padding:.3em}#ds-reset .ds-os{color:#fff;background:#1e90ff}#ds-reset .ds-br{color:#ff0;background:green}#ds-reset .ds-webmaster{border:1px solid red;color:red}</style><style>#xReturnTop{font-size:12px;position:fixed;z-index:9999;}#xReturnTop div,#xReturnTop div a{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;width:36px;height:36px;display:block;}#xReturnTop div{transition:0.3s;position:fixed;left:85%;bottom:-60px;background:url(http://cdn.atool.org/res/xreturntop/returnBgX.png) repeat;cursor:pointer;}#xReturnTop div a{float:left;background:url(http://cdn.atool.org/res/xreturntop/returnTopIco.png) no-repeat 11px 10px;}#xReturnTop div a:hover{background-color:#6e6e6e;}#xReturnTop div span{float:left;line-height:36px;color:#e6e6e6;margin-left:6px;}</style><script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/share.js"></script><script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/share.js"></script><link rel="stylesheet" href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/share_style1_24.css"><style type="text/css">#maxthon-1eec22d4-0232-4212-8283-6f2ac8f967-iframe{display:block!important;position:absolute!important;visibility:visible!important;z-index:2147483647!important;border-style:none!important;opacity:1!important;margin:0!important;padding:0!important;box-shadow:0 0 5px rgba(0,0,0,.3)!important;border:1px solid #b3b3b3!important}</style><link rel="stylesheet" href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/imgshare.css"><link rel="stylesheet" href="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/share_style0_16.css"></head>  
+	<body>  
+		<div id="warp">
+			<script language="javascript" type="text/javascript">
+ function addfavor(url,title){var ua=navigator.userAgent.toLowerCase();if(ua.indexOf("msie 8")>-1){external.AddToFavoritesBar(url,title,'');}else{try{window.external.addFavorite(url,title);}catch(e){try{window.sidebar.addPanel(title,url,'');}catch(e){alert("加入收藏失败，请使用键盘Ctrl+D进行添加");}}}return false;}
+</script>
+<div class="menu">
+	<ul id="lists">
+		<li class="single">
+			<a href="http://www.atool.org/" style="width:50px;background:none;">首页</a>
+		</li>
+		<li class="two"><a href="http://www.atool.org/classification_multimedia.html">在线多媒体处理</a><div class=""><dl><dt><a>微博热图制作</a></dt><dd><a class="new" href="http://www.atool.org/email_image.php">Email图片生成器</a></dd><dd><a class="new" href="http://www.atool.org/alipay_ten_year.php">十年账单日记</a></dd><dd><a class="new" href="http://www.atool.org/alipay_reward.php">支付宝红包口令</a></dd><dd><a class="" href="http://www.atool.org/mamabeat.php">妈妈再打我一次</a></dd><dd><a class="" href="http://www.atool.org/wbq.php">王宝强泰囧</a></dd><dd><a class="" href="http://www.atool.org/wwmxd1.php">万万没想到</a></dd><dd><a href="http://www.atool.org/zbd.php">臣妾做不到</a></dd><dd><a href="http://www.atool.org/xzk.php">文字信息斜着看</a></dd><dd><a href="http://www.atool.org/baidu.php">搜索引擎提示恶搞</a></dd><dd><a class="" href="http://www.atool.org/flappybird.php">FlappyBird生成器</a></dd><dd><a class="new" href="http://www.atool.org/12306.php">在线12306泄露查询</a></dd><dd><a class="" href="http://www.atool.org/weibofrom.php">微博自定义尾巴</a></dd></dl><dl><dt><a>网站制作</a></dt><dd><a class="new" href="http://www.atool.org/ico.php">在线透明ICO制作</a></dd><dd><a class="new" href="http://www.atool.org/roundcorner.php">在线透明圆角图片</a></dd><dd><a class="" href="http://www.atool.org/img2base64.php">在线图片Base64编码</a></dd><dd><a class="" href="http://www.atool.org/redstamp.php">在线制作印章</a></dd><dd><a href="http://www.atool.org/colorpicker.php">颜色选择器</a></dd><dd><a href="http://www.atool.org/pngcompression.php">PNG在线压缩</a></dd><dd><a href="http://www.atool.org/rotate.php">图片任意旋转</a></dd><dd><a class="" href="http://www.atool.org/imgcrop.php">在线图片剪裁</a></dd><dd><a class="new" href="http://www.atool.org/shorturl.php">新浪短地址生成还原</a></dd><dd><a class="new" href="http://www.atool.org/placeholder.php">占位图片Placeholder</a></dd></dl><dl><dt><a>其他</a></dt><dd><a class="new" href="http://www.atool.org/qrcode.php">二维码在线生成</a></dd><dd><a class="new" href="http://www.atool.org/laohuangli.php">程序员老黄历</a></dd><dd><a class="new" href="http://www.atool.org/qiuqian.php">程序员求签</a></dd><dd><a class="" href="http://www.atool.org/fhdq.php">在线特殊符号大全</a></dd><dd><a class="" href="http://www.atool.org/onlineps.php">在线Photoshop</a></dd><dd><a class="" href="http://www.atool.org/imgextconvert.php">在线图片格式转换</a></dd><dd><a href="http://www.atool.org/img2ascii.php">在线生成字符画</a></dd><dd><a href="http://www.atool.org/onlineVideo.php">在线视频语音聊天</a></dd></dl></div></li><li class="two"><a href="http://www.atool.org/classification_webmaster.html">站长工具</a><div class="c1"><dl><dt><a>网站SEO查询</a></dt><dd><a class="new" href="http://www.atool.org/fake_original.php">SEO伪原创工具</a></dd><dd><a class="new" href="http://www.atool.org/extlink.php">自动外链工具</a></dd><dd><a class="" href="http://www.atool.org/alexaup.php">Alexa排名优化</a></dd><dd><a href="http://www.atool.org/pr.php">PageRank查询</a></dd><dd><a href="http://www.atool.org/alexa.php">Alexa查询</a></dd><dd><a href="http://www.atool.org/dmoz.php">Dmoz收录查询</a></dd><dd><a href="http://www.atool.org/robots.txt.php">robots.txt生成器</a></dd><dd><a href="http://www.atool.org/submitsite.php">网址提交入口</a></dd></dl><dl><dt><a>域名相关</a></dt><dd><a href="http://www.atool.org/whois.php">Whois查询</a></dd><dd><a href="http://www.atool.org/expired.php">域名过期时间</a></dd><dd><a href="http://www.atool.org/domaindeleted.php">已删除域名</a></dd></dl><dl><dt><a>主机相关</a></dt><dd><a class="new" href="http://www.atool.org/port_scanner.php">在线端口扫描器</a></dd><dd><a class="new" href="http://www.atool.org/crontab.php">crontab时间验证</a></dd><dd><a class="" href="http://www.atool.org/htpasswd.php">htpasswd生成器</a></dd><dd><a class="new" href="http://www.atool.org/serverinfo.php">在线查询服务器信息</a></dd><dd><a class="new" href="http://www.atool.org/htaccess2nginx.php">htaccess转Nginx配置</a></dd><dd><a href="http://www.atool.org/host.php">主机IP地址查询</a></dd></dl><dl><dt><a>网站相关</a></dt><dd><a class="new" href="http://www.atool.org/zhifubaofukuan.php">支付宝收款代码</a></dd><dd><a class="" href="http://www.atool.org/colortext.php">文字特效生成器</a></dd><dd><a class="" href="http://www.atool.org/batchpv.php">在线批量刷PV工具</a></dd></dl></div></li><li class="two"><a href="http://www.atool.org/classification_dev_tools.html">在线代码转换</a><div class="c2"><dl><dt><a>开发服务相关</a></dt><dd><a class="new" href="http://www.atool.org/ios_logo.php">iOS APP LOGO图标</a></dd><dd><a class="" href="http://www.atool.org/regex.php">正则表达式测试</a></dd><dd><a href="http://www.atool.org/csscompression.php">CSS压缩美化</a></dd><dd><a href="http://www.atool.org/jscompression.php">JavaScript压缩美化</a></dd><dd><a href="http://www.atool.org/jsonformat.php">JSON校验/格式化</a></dd><dd><a class="" href="http://www.atool.org/jsoneditor.php">在线JSON编辑器</a></dd><dd><a class="" href="http://www.atool.org/xmlformat.php">在线XML格式化</a></dd><dd><a class="new" href="http://www.atool.org/sqlformat.php">在线SQL格式化</a></dd><dd><a href="http://www.atool.org/html2markdown.php">HTML转MarkDown</a></dd><dd><a href="http://www.atool.org/html_ubb.php">HTML/UBB互转</a></dd><dd><a href="http://www.atool.org/html2script.php">HTML转脚本工具</a></dd><dd><a class="" href="http://www.atool.org/lua_api.html">Lua开发手册</a></dd><dd><a class="new" href="http://www.atool.org/hexconvert.php">任意进制数转换</a></dd><dd><a class="new" href="http://www.atool.org/javascriptfuck.php">降低Js可读性</a></dd><dd><a class="" href="http://www.atool.org/httptest.php">在线接口测试工具</a></dd><dd><a href="http://www.atool.org/weixintest.php">微信接口测试工具</a></dd><dd><a href="http://www.atool.org/timestamp.php">Unix时间戳转换</a></dd><dd><a class="new" href="http://www.atool.org/wordcounter.php">在线单词统计工具</a></dd></dl><dl><dt><a>哈希算法相关</a></dt><dd><a href="http://www.atool.org/file_hash.php">计算文件MD5</a></dd><dd><a href="http://www.atool.org/hash.php#MD5">MD5算法</a></dd><dd><a href="http://www.atool.org/hash.php#SHA1">SHA1算法</a></dd><dd><a href="http://www.atool.org/hash.php#SHA2">SHA2算法</a></dd><dd><a href="http://www.atool.org/hash.php#SHA3">SHA3算法</a></dd><dd><a href="http://www.atool.org/hash.php#RIPEMD-160">RIPEMD-160算法</a></dd></dl><dl><dt><a>加密解密算法</a></dt><dd><a href="http://www.atool.org/morse.php">摩斯电码加密解密</a></dd><dd><a class="new" href="http://www.atool.org/password.php">随机密码生成器</a></dd></dl><dl><dt><a>URL编解码</a></dt><dd><a href="http://www.atool.org/videourl.php">在线视频信息提取</a></dd><dd><a href="http://www.atool.org/downloadurl.php">迅雷快车旋风URL</a></dd></dl><dl><dt><a>中文汉字相关</a></dt><dd><a class="new" href="http://www.atool.org/dianma.php">中文标准电码</a></dd><dd><a class="new" href="http://www.atool.org/hanzi.php">汉字部首五笔码</a></dd><dd><a href="http://www.atool.org/chinese2unicode.php">中文Unicode互转</a></dd><dd><a href="http://www.atool.org/chinese2unicode.php">ASCII/Unicode互转</a></dd><dd><a class="" href="http://www.atool.org/typepractice.php">在线打字练习工具</a></dd><dd><a class="" href="http://www.atool.org/dianzhen.php">中英文转点阵子体</a></dd></dl></div></li><li class="three"><a href="http://www.atool.org/classification_convenience.html">其他工具</a><div class="c3 p1"><dl><dt><a>便民服务</a></dt><dd><a class="new" href="http://www.atool.org/finance_calculator.php">还贷计算器</a></dd><dd><a class="new" href="http://www.atool.org/clothing_sizes.php">服装尺码计算器</a></dd><dd><a class="" href="http://www.atool.org/wannianli.php">在线万年历</a></dd><dd><a class="" href="http://www.atool.org/rmbdx.php">RMB数字转大写汉字</a></dd><dd><a class="new" href="http://www.atool.org/ruler.php">在线刻度尺</a></dd><dd><a class="" href="http://www.atool.org/relateship.php">三姑六婆网页版</a></dd><dd><a class="" href="http://www.atool.org/phonefee.php">在线手机话费充值</a></dd><dd><a class="new" href="http://www.atool.org/bank.php">查询银行卡信息</a></dd><dd><a href="http://www.atool.org/taxcalculator.php">个人所得税计算器</a></dd><dd><a href="http://www.atool.org/weather.php">城市天气预报</a></dd><dd><a href="http://www.atool.org/calculator.php">在线计算器</a></dd><dd><a href="http://www.atool.org/ip.php">IP归属地查询</a></dd><dd><a href="http://www.atool.org/phonenumber.php">手机归属地查询</a></dd><dd><a href="http://www.atool.org/express.php">快递跟踪查询</a></dd><dd><a href="http://www.atool.org/dreamsearch.php">在线周公解梦</a></dd><dd><a class="" href="http://www.atool.org/idcard_gen.php">身份证号复印件</a></dd><dd><a class="" href="http://www.atool.org/idcard.php">身份证号生成器</a></dd><dd><a class="new" href="http://www.atool.org/date_gap.php">日期间隔天数</a></dd><dd><a class="" href="http://www.atool.org/area2location.php">地名经纬度查询</a></dd></dl><dl><dt><a>娱乐学习</a></dt><dd><a class="" href="http://www.atool.org/sticky.php">在线网络便签</a></dd><dd><a href="http://www.atool.org/chengyusearch.php">中文成语查询</a></dd><dd><a class="new" href="http://www.atool.org/music.html">在线音乐盒</a></dd><dd><a href="http://www.atool.org/bingimg.php">Bing每日壁纸</a></dd><dd><a href="http://www.atool.org/translate.html">在线翻译工具集</a></dd><dd><a href="http://www.atool.org/hanzi2pinyin.php">中文汉字转拼音</a></dd><dd><a href="http://www.atool.org/jianti_fanti.php">中文简体繁体互转</a></dd><dd><a href="http://alarm.hust.cc/">在线定时器</a></dd><dd><a href="http://nav.hust.cc/onlineTv.html">在线电视直播</a></dd><dd><a href="http://www.atool.org/network.php">网络IP计算器</a></dd><dd><a href="http://www.atool.org/24point.php">24点在线找答案</a></dd><dd><a class="new" href="http://www.atool.org/sort.php">排序算法演示</a></dd></dl><dl><dt><a>健康养生</a></dt><dd><a class="new" href="http://www.atool.org/psi.php">人体生物周期(PSI)</a></dd></dl><dl><dt><a>其他</a></dt><dd><a href="http://www.atool.org/qq.php">QQ空间资料</a></dd><dd><a href="http://www.atool.org/chinesevertical.php">汉字古文竖排</a></dd><dd><a href="http://www.atool.org/fakerperson.php">虚拟个人信息生成</a></dd></dl><dl><dt><a>在线小游戏</a></dt><dd><a class="new" href="http://www.atool.org/flappy2048.php">Flappy2048游戏</a></dd><dd><a class="new" href="http://www.atool.org/keytype.php">在线打飞字游戏</a></dd><dd><a class="new" href="http://www.atool.org/magic_cube.php">在线魔方游戏</a></dd><dd><a class="" href="http://www.atool.org/2048.php">在线2048游戏</a></dd><dd><a href="http://www.atool.org/sudoku.php">在线数独游戏</a></dd><dd><a href="http://www.atool.org/jigsawpuzzle.php">在线拼图游戏</a></dd><dd><a class="" href="http://www.atool.org/minesweep.php">在线扫雷游戏</a></dd><dd><a href="http://www.atool.org/tetris.php">俄罗斯方块</a></dd><dd><a href="http://www.atool.org/gobang.php">在线五子棋</a></dd><dd><a href="http://www.atool.org/chess.php">在线中国象棋</a></dd><dd><a href="http://www.atool.org/maze.php">在线迷宫游戏</a></dd><dd><a href="http://www.atool.org/untied.php">Html5解开绳子</a></dd><dd><a href="http://www.atool.org/tictactoe.php">在线井字棋</a></dd><dd><a href="http://www.atool.org/piano.php">在线弹钢琴</a></dd><dd><a href="http://www.atool.org/tx3.php">天下3经验计算器</a></dd></dl>		</div></li><li class="single">
+			<a href="http://www.atool.org/about.php">关于aTool.org</a>
+			<div class="c4">
+				<dl>
+					<dt><a>联系</a></dt>
+					<dd><a href="http://weibo.com/u/1868508583" rel="nofollow" target="_blank">站长微博</a></dd>
+					<dd><a class="new" href="http://www.atool.org/sort.php#" title="QQ群：302883987" alt="QQ群：302883987" rel="nofollow" target="_blank">QQ群: 302883987</a></dd>
+					<dt><a>关于</a></dt>
+					<dd><a href="javascript:void(0);" style="cursor: pointer;" onclick="addfavor(&#39;http://www.atool.org&#39;,&#39;aTool在线工具&#39;)">收藏aTool.org</a></dd>
+					<dd><a class="new" href="http://www.atool.org/about.php">关于网站</a></dd>
+					<dt><a>加入我们</a></dt>
+					<dd><a class="new" href="http://www.atool.org/addme.php">如何嵌入本站功能</a></dd>
+					<dd><a class="new" href="http://s.atool.org/">搜索在线工具</a></dd>
+				</dl>
+				<dl>
+			</dl></div>
+		</li>
+		<!--<div class="sina_weibo_u"><wb:follow-button uid="1868508583" type="red_2" width="136" height="24" ></wb:follow-button></div>-->
+		<!-- Baidu Button BEGIN -->
+<div class="bdsharebuttonbox bdshare-button-style1-24" data-bd-bind="1512304972837"><a href="http://www.atool.org/sort.php#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><!--<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">--><a href="http://www.atool.org/sort.php#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="http://www.atool.org/sort.php#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="http://www.atool.org/sort.php#" class="bds_more" data-cmd="more"></a></div>
+<!-- Baidu Button END -->
+	</ul>
+	</div>
+			<div class="center">
+				<h1>在线动画演示各种排序算法过程 - aTool在线工具</h1>
+				<hr>
+				<style type="text/css">
+	#ad-blocks {
+		margin: 10px 0;
+	}
+</style>
+<div id="ad-blocks"><div class="ad-block"><ul><li><a href="http://www.atool.org/" target="_blank" class="">【b3qude】阿里云 vps 推荐码</a></li><li><a href="http://blog.5ibc.net/go/aliyun" target="_blank" class="red">阿里云全产品优惠券</a></li><li><a href="http://www.atool.org/" target="_blank" class="red">加群:广告位(150/月)</a></li><li><a href="http://434.com.cn/fuwu/244.html" target="_blank" class="red">【推荐】专业原创文章代写</a></li></ul></div></div>
+<script type="text/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/ad-block.js"></script>
+<div>
+<script async="" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/adsbygoogle.js"></script>
+<!-- adapte_ad -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7292810486004926" data-ad-slot="9220497478" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<script type="text/javascript">
+/*960*60 创建于 2017/10/9*/
+var cpro_id = "u3108649";
+</script>
+<script type="text/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/c.js"></script>
+</div>				<ul><li><script async="" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:15px;margin: 0 auto;" data-ad-client="ca-pub-7292810486004926" data-ad-slot="8210414274"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- 
+<script type="text/javascript">
+    /*468*15 创建于 2016-04-09*/
+    var cpro_id = "u2594672";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+ -->
+</li></ul>
+				<hr>
+				<br>
+				<div id="mainContent" style="background-color:#FFFFDD;padding-top: 10px;"> 
+					<div id="algoControlSection" style="margin-left: 50px;">
+						<table id="AlgorithmSpecificControls"> <td><input type="Button" value="混排队列" name="混排队列" disabled=""></td><td><input type="Button" value="插入排序" name="插入排序" disabled=""></td><td><input type="Button" value="选择排序" name="选择排序" disabled=""></td><td><input type="Button" value="冒泡排序" name="冒泡排序" disabled=""></td><td><input type="Button" value="快速排序" name="快速排序" disabled=""></td><td><input type="Button" value="归并排序" name="归并排序" disabled=""></td><td><input type="Button" value="希尔排序" name="希尔排序" disabled=""></td><td><input type="Button" value="调整队列大小" name="调整队列大小" disabled=""></td></table> 
+					</div>
+					<canvas id="canvas" width="1000" height="500"></canvas>
+					
+					<div id="generalAnimationControlSection" style="margin-left: 50px;">
+						<table id="GeneralAnimationControls"><td><input type="Button" value="跳回最初"></td><td><input type="Button" value="后退一步" disabled=""></td><td><input type="Button" value="pause"></td><td><input type="Button" value="向前一步" disabled=""></td><td><input type="Button" value="跳到最后"></td><td><table><tr><td><div display="inline-block" float="left" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:200px"><a href="http://www.atool.org/sort.php#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 14%;"></a></div></td></tr><tr><td align="center">动画速度</td></tr></table></td><td> 宽:</td><td><input type="Text" value="1000" size="4"></td><td>       高:</td><td><input type="Text" value="500" size="4"></td><td><input type="Button" value="调整画布大小"></td></table>		
+					</div>
+				</div>
+				<script type="text/javascript">init();</script>
+				<hr>
+				<br>
+				<h2>排序算法概要说明</h2>
+				<ul><li><span class="red">1. 插入排序：</span>插入排序基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入排序的基本思想是：每步将一个待排序的纪录，按其关键码值的大小插入前面已经排序的文件中适当位置上，直到全部插入完为止。</li></ul>
+				<ul><li><span class="red">2. 选择排序：</span>选择排序（Selection sort）是一种简单直观的排序算法。它的工作原理是每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。 选择排序是不稳定的排序方法。</li></ul>
+				<ul><li><span class="red">3. 冒泡排序：</span>冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端。</li></ul>
+				<ul><li><span class="red">4. 快速排序：</span>快速排序（Quicksort）是对冒泡排序的一种改进。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</li></ul>
+				<ul><li><span class="red">5. 归并排序：</span>归并排序是建立在归并操作上的一种有效的排序算法,该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为二路归并。</li></ul>
+				<ul><li><span class="red">6. 希尔排序：</span>希尔排序(Shell Sort)是插入排序的一种。也称缩小增量排序，是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</li></ul>
+				<ul><li>本工具提供一款在线演示上述插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序几个排序算法的执行过程，以动画的形式展示出来，简单易懂，便于理解。</li></ul>
+				<hr>
+				<br>
+				<h2>各种排序算法的时间、空间复杂度、稳定性对比分析</h2>
+				<div style="width:800px;margin:0 auto;"><img src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/sort_compare.jpg" data-bd-imgshare-binded="1"></div>
+				<hr>
+				<br>
+				
+<h2>站点导航</h2><ul class="site_maps"><li>微博热图制作：<a class="new" href="http://www.atool.org/email_image.php">Email图片生成器</a>  、  <a class="new" href="http://www.atool.org/alipay_ten_year.php">十年账单日记</a>  、  <a class="new" href="http://www.atool.org/alipay_reward.php">支付宝红包口令</a>  、  <a class="" href="http://www.atool.org/mamabeat.php">妈妈再打我一次</a>  、  <a class="" href="http://www.atool.org/wbq.php">王宝强泰囧</a>  、  <a class="" href="http://www.atool.org/wwmxd1.php">万万没想到</a>  、  <a href="http://www.atool.org/zbd.php">臣妾做不到</a>  、  <a href="http://www.atool.org/xzk.php">文字信息斜着看</a>  、  <a href="http://www.atool.org/baidu.php">搜索引擎提示恶搞</a>  、  <a class="" href="http://www.atool.org/flappybird.php">FlappyBird生成器</a>  、  <a class="new" href="http://www.atool.org/12306.php">在线12306泄露查询</a>  、  <a class="" href="http://www.atool.org/weibofrom.php">微博自定义尾巴</a>  、  </li><li>网站制作：<a class="new" href="http://www.atool.org/ico.php">在线透明ICO制作</a>  、  <a class="new" href="http://www.atool.org/roundcorner.php">在线透明圆角图片</a>  、  <a class="" href="http://www.atool.org/img2base64.php">在线图片Base64编码</a>  、  <a class="" href="http://www.atool.org/redstamp.php">在线制作印章</a>  、  <a href="http://www.atool.org/colorpicker.php">颜色选择器</a>  、  <a href="http://www.atool.org/pngcompression.php">PNG在线压缩</a>  、  <a href="http://www.atool.org/rotate.php">图片任意旋转</a>  、  <a class="" href="http://www.atool.org/imgcrop.php">在线图片剪裁</a>  、  <a class="new" href="http://www.atool.org/shorturl.php">新浪短地址生成还原</a>  、  <a class="new" href="http://www.atool.org/placeholder.php">占位图片Placeholder</a>  、  </li><li>其他：<a class="new" href="http://www.atool.org/qrcode.php">二维码在线生成</a>  、  <a class="new" href="http://www.atool.org/laohuangli.php">程序员老黄历</a>  、  <a class="new" href="http://www.atool.org/qiuqian.php">程序员求签</a>  、  <a class="" href="http://www.atool.org/fhdq.php">在线特殊符号大全</a>  、  <a class="" href="http://www.atool.org/onlineps.php">在线Photoshop</a>  、  <a class="" href="http://www.atool.org/imgextconvert.php">在线图片格式转换</a>  、  <a href="http://www.atool.org/img2ascii.php">在线生成字符画</a>  、  <a href="http://www.atool.org/onlineVideo.php">在线视频语音聊天</a>  、  </li><li>网站SEO查询：<a class="new" href="http://www.atool.org/fake_original.php">SEO伪原创工具</a>  、  <a class="new" href="http://www.atool.org/extlink.php">自动外链工具</a>  、  <a class="" href="http://www.atool.org/alexaup.php">Alexa排名优化</a>  、  <a href="http://www.atool.org/pr.php">PageRank查询</a>  、  <a href="http://www.atool.org/alexa.php">Alexa查询</a>  、  <a href="http://www.atool.org/dmoz.php">Dmoz收录查询</a>  、  <a href="http://www.atool.org/robots.txt.php">robots.txt生成器</a>  、  <a href="http://www.atool.org/submitsite.php">网址提交入口</a>  、  </li><li>域名相关：<a href="http://www.atool.org/whois.php">Whois查询</a>  、  <a href="http://www.atool.org/expired.php">域名过期时间</a>  、  <a href="http://www.atool.org/domaindeleted.php">已删除域名</a>  、  </li><li>主机相关：<a class="new" href="http://www.atool.org/port_scanner.php">在线端口扫描器</a>  、  <a class="new" href="http://www.atool.org/crontab.php">crontab时间验证</a>  、  <a class="" href="http://www.atool.org/htpasswd.php">htpasswd生成器</a>  、  <a class="new" href="http://www.atool.org/serverinfo.php">在线查询服务器信息</a>  、  <a class="new" href="http://www.atool.org/htaccess2nginx.php">htaccess转Nginx配置</a>  、  <a href="http://www.atool.org/host.php">主机IP地址查询</a>  、  </li><li>网站相关：<a class="new" href="http://www.atool.org/zhifubaofukuan.php">支付宝收款代码</a>  、  <a class="" href="http://www.atool.org/colortext.php">文字特效生成器</a>  、  <a class="" href="http://www.atool.org/batchpv.php">在线批量刷PV工具</a>  、  </li><li>开发服务相关：<a class="new" href="http://www.atool.org/ios_logo.php">iOS APP LOGO图标</a>  、  <a class="" href="http://www.atool.org/regex.php">正则表达式测试</a>  、  <a href="http://www.atool.org/csscompression.php">CSS压缩美化</a>  、  <a href="http://www.atool.org/jscompression.php">JavaScript压缩美化</a>  、  <a href="http://www.atool.org/jsonformat.php">JSON校验/格式化</a>  、  <a class="" href="http://www.atool.org/jsoneditor.php">在线JSON编辑器</a>  、  <a class="" href="http://www.atool.org/xmlformat.php">在线XML格式化</a>  、  <a class="new" href="http://www.atool.org/sqlformat.php">在线SQL格式化</a>  、  <a href="http://www.atool.org/html2markdown.php">HTML转MarkDown</a>  、  <a href="http://www.atool.org/html_ubb.php">HTML/UBB互转</a>  、  <a href="http://www.atool.org/html2script.php">HTML转脚本工具</a>  、  <a class="" href="http://www.atool.org/lua_api.html">Lua开发手册</a>  、  <a class="new" href="http://www.atool.org/hexconvert.php">任意进制数转换</a>  、  <a class="new" href="http://www.atool.org/javascriptfuck.php">降低Js可读性</a>  、  <a class="" href="http://www.atool.org/httptest.php">在线接口测试工具</a>  、  <a href="http://www.atool.org/weixintest.php">微信接口测试工具</a>  、  <a href="http://www.atool.org/timestamp.php">Unix时间戳转换</a>  、  <a class="new" href="http://www.atool.org/wordcounter.php">在线单词统计工具</a>  、  </li><li>哈希算法相关：<a href="http://www.atool.org/file_hash.php">计算文件MD5</a>  、  <a href="http://www.atool.org/hash.php#MD5">MD5算法</a>  、  <a href="http://www.atool.org/hash.php#SHA1">SHA1算法</a>  、  <a href="http://www.atool.org/hash.php#SHA2">SHA2算法</a>  、  <a href="http://www.atool.org/hash.php#SHA3">SHA3算法</a>  、  <a href="http://www.atool.org/hash.php#RIPEMD-160">RIPEMD-160算法</a>  、  </li><li>加密解密算法：<a href="http://www.atool.org/morse.php">摩斯电码加密解密</a>  、  <a class="new" href="http://www.atool.org/password.php">随机密码生成器</a>  、  </li><li>URL编解码：<a href="http://www.atool.org/videourl.php">在线视频信息提取</a>  、  <a href="http://www.atool.org/downloadurl.php">迅雷快车旋风URL</a>  、  </li><li>中文汉字相关：<a class="new" href="http://www.atool.org/dianma.php">中文标准电码</a>  、  <a class="new" href="http://www.atool.org/hanzi.php">汉字部首五笔码</a>  、  <a href="http://www.atool.org/chinese2unicode.php">中文Unicode互转</a>  、  <a href="http://www.atool.org/chinese2unicode.php">ASCII/Unicode互转</a>  、  <a class="" href="http://www.atool.org/typepractice.php">在线打字练习工具</a>  、  <a class="" href="http://www.atool.org/dianzhen.php">中英文转点阵子体</a>  、  </li><li>便民服务：<a class="new" href="http://www.atool.org/finance_calculator.php">还贷计算器</a>  、  <a class="new" href="http://www.atool.org/clothing_sizes.php">服装尺码计算器</a>  、  <a class="" href="http://www.atool.org/wannianli.php">在线万年历</a>  、  <a class="" href="http://www.atool.org/rmbdx.php">RMB数字转大写汉字</a>  、  <a class="new" href="http://www.atool.org/ruler.php">在线刻度尺</a>  、  <a class="" href="http://www.atool.org/relateship.php">三姑六婆网页版</a>  、  <a class="" href="http://www.atool.org/phonefee.php">在线手机话费充值</a>  、  <a class="new" href="http://www.atool.org/bank.php">查询银行卡信息</a>  、  <a href="http://www.atool.org/taxcalculator.php">个人所得税计算器</a>  、  <a href="http://www.atool.org/weather.php">城市天气预报</a>  、  <a href="http://www.atool.org/calculator.php">在线计算器</a>  、  <a href="http://www.atool.org/ip.php">IP归属地查询</a>  、  <a href="http://www.atool.org/phonenumber.php">手机归属地查询</a>  、  <a href="http://www.atool.org/express.php">快递跟踪查询</a>  、  <a href="http://www.atool.org/dreamsearch.php">在线周公解梦</a>  、  <a class="" href="http://www.atool.org/idcard_gen.php">身份证号复印件</a>  、  <a class="" href="http://www.atool.org/idcard.php">身份证号生成器</a>  、  <a class="new" href="http://www.atool.org/date_gap.php">日期间隔天数</a>  、  <a class="" href="http://www.atool.org/area2location.php">地名经纬度查询</a>  、  </li><li>娱乐学习：<a class="" href="http://www.atool.org/sticky.php">在线网络便签</a>  、  <a href="http://www.atool.org/chengyusearch.php">中文成语查询</a>  、  <a class="new" href="http://www.atool.org/music.html">在线音乐盒</a>  、  <a href="http://www.atool.org/bingimg.php">Bing每日壁纸</a>  、  <a href="http://www.atool.org/translate.html">在线翻译工具集</a>  、  <a href="http://www.atool.org/hanzi2pinyin.php">中文汉字转拼音</a>  、  <a href="http://www.atool.org/jianti_fanti.php">中文简体繁体互转</a>  、  <a href="http://alarm.hust.cc/">在线定时器</a>  、  <a href="http://nav.hust.cc/onlineTv.html">在线电视直播</a>  、  <a href="http://www.atool.org/network.php">网络IP计算器</a>  、  <a href="http://www.atool.org/24point.php">24点在线找答案</a>  、  <a class="new" href="http://www.atool.org/sort.php">排序算法演示</a>  、  </li><li>健康养生：<a class="new" href="http://www.atool.org/psi.php">人体生物周期(PSI)</a>  、  </li><li>其他：<a href="http://www.atool.org/qq.php">QQ空间资料</a>  、  <a href="http://www.atool.org/chinesevertical.php">汉字古文竖排</a>  、  <a href="http://www.atool.org/fakerperson.php">虚拟个人信息生成</a>  、  </li><li>在线小游戏：<a class="new" href="http://www.atool.org/flappy2048.php">Flappy2048游戏</a>  、  <a class="new" href="http://www.atool.org/keytype.php">在线打飞字游戏</a>  、  <a class="new" href="http://www.atool.org/magic_cube.php">在线魔方游戏</a>  、  <a class="" href="http://www.atool.org/2048.php">在线2048游戏</a>  、  <a href="http://www.atool.org/sudoku.php">在线数独游戏</a>  、  <a href="http://www.atool.org/jigsawpuzzle.php">在线拼图游戏</a>  、  <a class="" href="http://www.atool.org/minesweep.php">在线扫雷游戏</a>  、  <a href="http://www.atool.org/tetris.php">俄罗斯方块</a>  、  <a href="http://www.atool.org/gobang.php">在线五子棋</a>  、  <a href="http://www.atool.org/chess.php">在线中国象棋</a>  、  <a href="http://www.atool.org/maze.php">在线迷宫游戏</a>  、  <a href="http://www.atool.org/untied.php">Html5解开绳子</a>  、  <a href="http://www.atool.org/tictactoe.php">在线井字棋</a>  、  <a href="http://www.atool.org/piano.php">在线弹钢琴</a>  、  <a href="http://www.atool.org/tx3.php">天下3经验计算器</a>  、  </li></ul><hr><br>
+<h2>发表评论</h2>
+<!-- Duoshuo Comment BEGIN-->
+<!-- 第1部分：在embed.js之前加载duoshuo-ua.min.js -->
+<script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/duoshuo-ua-with-css.min.js"></script>
+<!-- 第2部分：也可写成异步加载，请写在第1部分后面 -->
+<script>var duoshuoQuery={short_name:'atool',myIds:[1078097,4748357,9365423]};</script>
+<script src="http://static.duoshuo.com/embed.js"></script>
+<div class="ds-thread" data-thread-key="/sort.php"></div>
+<!-- Duoshuo Comment END -->
+
+<hr>
+<br>			</div>
+			<div class="foot">版权所有，保留一切权利！© 2012-2017&nbsp;•&nbsp;
+	<a href="http://www.atool.org/sitemap.xml" target="_blank">在线工具</a>&nbsp;&nbsp;
+	<img title="可信网站认证" alt="可信网站认证" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/right.gif" rel="nofollow" width="200" height="30" style="margin-bottom: -10px;" data-bd-imgshare-binded="1">
+</div>
+<script type="text/javascript" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/x-return-top.min.js"></script>
+<div id="xReturnTop"><div style="overflow: hidden; bottom: 15%;"><a href="javascript:void(0)"></a><span>返回顶部</span></div></div>
+<script type="text/javascript">xReturnTop('xReturnTop', {'path':'http://cdn.atool.org/res/xreturntop/'});</script>
+<span class="hidden"><script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/stat.php" language="JavaScript"></script><script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5763499" target="_blank" title="站长统计">站长统计</a></span>
+<script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"2337303479","tqq":"801368329"},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","qzone","renren"],"viewText":"分享aTool到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+<div id="qrcode_ad" style="position:fixed;top:100px;right:50px;z-index:99999;">
+	<img rel="nofollow" src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/atool-org-weixin.jpg" width="120" height="120" alt="官方微信公众号 - 扫一扫关注" title="官方微信公众号 - 扫一扫关注" data-bd-imgshare-binded="1">
+	<br>
+	公众号: <span class="red">atool-org</span>
+	<br>
+	<a class="green" target="_blank" rel="nofollow" title="百度点评，求五星评论！" href="http://koubei.baidu.com/s/www.atool.org">1.点下赞又不会死?</a>
+	<br>
+	<form name="alipay_form" style="padding-bottom: 0;border:none;" method="post" action="https://shenghuo.alipay.com/send/payment/fill.htm" target="_blank" accept-charset="GBK" onsubmit="document.charset=&#39;gbk&#39;;">
+		<input type="hidden" value="wang@50vip.com" name="optEmail">
+		<input type="hidden" value="0.9" name="payAmount">
+		<input type="hidden" name="title" placeholder="付款说明" value="赞助9角钱，支持aTool">
+		<input type="hidden" name="memo" placeholder="付款说明" value="赞助费用将用于每天4块钱的主机服务器费用...我一定会努力增加更多实用的功能！">
+		<a class="red" href="javascript:javascript:document.alipay_form.submit();" title="赞助费用将用于每天4块钱的主机服务器费用" value="2.小额捐助9毛钱" name="pay">2.捐助0.9元</a> | <a class="green strong" href="http://www.atool.org/about.php#alipay_list">名单</a>
+	</form>
+	<!-- <a class="green" target="_blank" rel="nofollow" title="设置 - 扩展程序 - 开启开发者调试模式，然后安装！" href="http://www.atool.org/res/atool.app.crx">2.Chrome扩展下载</a> -->
+	<!-- 3.随便看<a class="green" target="_blank" title="看个笑话 - 笑话数据库" href="http://joke.setin.cn/">笑话</a> | <a class="green" target="_blank" title="每日经典美文" href="http://www.setin.cn/">文章</a> -->
+	3.《<a class="green" target="_blank" rel="nofollow" title="表演达人游戏" href="http://app.weibo.com/detail/2FoVXD?ref=appsuggest">表演达人</a>》
+	<br>
+	4.<span class="red"><a target="_blank" href="https://github.com/aTool-org">Github开源代码</a></span>
+</div>
+
+<script type="text/javascript">console.log('%c在线工具\n%chttp://www.atool.org\n-------------\nQQ交流群: 302883987', 'color:#5B7102; font-size: 20px;', 'color:#5B7102');</script>
+<script src="./各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较 - aTool在线工具_files/placeholder.min.js"></script>		</div>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"2337303479","tqq":"801368329"},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","qzone","renren"],"viewText":"分享aTool到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>	  
+<div id="bdimgshare_1512304972867" class="sr-bdimgshare sr-bdimgshare-list sr-bdimgshare-16 sr-bdimgshare-black" style="height: 36px; line-height: 26px; font-size: 12px; position: absolute; top: 1505.19px; left: 391.5px; width: 622px; display: none;" data-bd-bind="1512304972867"><div class="bdimgshare-bg"></div><div class="bdimgshare-content bdsharebuttonbox bdshare-button-style0-16"><label class="bdimgshare-lbl">分享aTool到：</label><a href="http://www.atool.org/sort.php#" onclick="return false;" class="bds_tsina" data-cmd="tsina" hidefocus=""></a><a href="http://www.atool.org/sort.php#" onclick="return false;" class="bds_tqq" data-cmd="tqq" hidefocus=""></a><a href="http://www.atool.org/sort.php#" onclick="return false;" class="bds_qzone" data-cmd="qzone" hidefocus=""></a><a href="http://www.atool.org/sort.php#" onclick="return false;" class="bds_renren" data-cmd="renren" hidefocus=""></a><a href="http://www.atool.org/sort.php#" onclick="return false;" class="bds_more" data-cmd="more" hidefocus=""></a></div></div></body></html>
