@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://tools.jb51.net/aideddesign/paixu_ys -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线动画演示插入/选择/冒泡/归并/希尔/快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具</title>
+    <meta name="keywords" content="排序,算法,动画演示,在线演示,插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序,排序算法演示,排序算法在线动画演示">
+    <meta name="description" content="这是一款可在线动画演示各个常见排序算法的工具，搜集了插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序等排序算法的动画显示，并附带了较为详尽的排序算法说明，有助于读者更加直观深刻的理解与学习数据结构与算法中的常见排序算法。提供给需要的朋友免费使用。">
+    <!-- Bootstrap -->
+    <link href="http://tools.jb51.net/static/skin/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Styles -->
+    <link href="http://tools.jb51.net/static/skin/css/theme.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://tools.jb51.net/static/skin/js/html5shiv.min.js"></script>
+      <script src="http://tools.jb51.net/static/skin/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--[if !IE]> -->
+    <script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/push.js"></script><script type="text/javascript">
+        window.jQuery || document.write("<script src='http://tools.jb51.net/static/skin/js/jquery.min.js'>"+"<"+"/script>");
+    </script><script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/jquery.min.js"></script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='http://tools.jb51.net/static/skin/js/jquery1x.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+  </head>
+  <body>
+  <header>
+	<nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid"><!-- container-fluid -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">菜单</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://tools.jb51.net/">脚本之家在线工具</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://tools.jb51.net/#home">首页</a></li>
+            <li class="dropdown">
+              <a href="http://tools.jb51.net/aideddesign/paixu_ys#" class="dropdown-toggle" data-toggle="dropdown">开发工具<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://tools.jb51.net/table">常用参考表对照表</a></li>
+                <li><a href="http://tools.jb51.net/code">代码工具</a></li>
+                <li><a href="http://tools.jb51.net/regex">正则表达式工具</a></li>
+                <li><a href="http://tools.jb51.net/color">颜色相关工具</a></li>
+                <li><a href="http://tools.jb51.net/transcoding">编码转换工具</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="http://tools.jb51.net/aideddesign/paixu_ys#" class="dropdown-toggle" data-toggle="dropdown">站长工具<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://tools.jb51.net/password">密码工具箱</a></li>
+                <li><a href="http://tools.jb51.net/email">Email相关工具</a></li>
+                <li><a href="http://tools.jb51.net/aideddesign">站长辅助工具</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="http://tools.jb51.net/aideddesign/paixu_ys#" class="dropdown-toggle" data-toggle="dropdown">生活工具<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://tools.jb51.net/jisuanqi">在线计算器</a></li>
+                <li><a href="http://tools.jb51.net/zhuanhuanqi">度衡量换算</a></li>
+                <li><a href="http://tools.jb51.net/baojian">健康保健查询</a></li>
+                <li><a href="http://tools.jb51.net/bianmin">便民生活查询</a></li>
+                <li><a href="http://tools.jb51.net/games">休闲娱乐频道</a></li>
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.jb51.net/" target="_blank">脚本之家旗下网站</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+	</nav>
+  </header>
+  <div class="container-fluid"><!-- container-fluid -->
+
+
+<div class="row">
+
+	<div class="col-md-3">
+  
+	    <div class="panel panel-default">
+      <script type="text/javascript">var cpro_id="u1645651";</script><script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/c.js" type="text/javascript"></script>
+
+    </div>   
+    
+    <ul class="sidebar-menu">
+      		<li><a href="http://tools.jb51.net/table" class=""><i class="fa fa-table"></i>常用参考表对照表</a></li>
+      		<li><a href="http://tools.jb51.net/code" class=""><i class="fa fa-code"></i>代码工具</a></li>
+      		<li><a href="http://tools.jb51.net/regex" class=""><i class="fa fa-empire"></i>正则表达式工具</a></li>
+      		<li><a href="http://tools.jb51.net/color" class=""><i class="fa fa-delicious"></i>颜色相关工具</a></li>
+      		<li><a href="http://tools.jb51.net/transcoding" class=""><i class="fa fa-cubes"></i>编码转换工具</a></li>
+      		<li><a href="http://tools.jb51.net/password" class=""><i class="fa fa-compass"></i>密码工具箱</a></li>
+      		<li><a href="http://tools.jb51.net/email" class=""><i class="fa fa-envelope"></i>Email相关工具</a></li>
+      		<li><a href="http://tools.jb51.net/aideddesign" class=" selected"><i class="fa fa-share-square-o"></i>站长辅助工具</a></li>
+            <ul class="listbar-menu">
+      					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/webps" class="">在线PS图像处理工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/createrobots" class="">在线robots.txt文件生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/ljscq" class="">在线网址链接批量生成器</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/picext" class="">在线图片格式转换(jpg/bmp/gif/png)工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/ipcha" class="">IP地址归属地在线查询工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/ico_img" class="">ICO图标在线生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css3_boxshadow" class="">CSS3 Box Shadow(阴影)效果在线调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css3_textshadow" class="">CSS3 Text Shadow(文本阴影)效果在线调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css3_textstroke" class="">CSS3 Text Stroke(文本描边)和text-fill-color(文本填充色)调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css3_borderradius" class="">CSS3 border-radius(圆角)效果在线调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/webkit_LinearGradients" class="">webkit内核safari/Chrome的Linear Gradients(线性渐变)在线调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/moz_LinearGradients" class="">Firefox的Linear Gradients (线性渐变)在线调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css3_transform" class="">CSS3 transform(变形)和transform-origin(变形原点)调试工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/css_create" class="">CSS样式在线生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/button_css" class="">按钮CSS样式在线生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_paiban" class="">在线文本美化排版工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/flipped_txt" class="">在线文本倒序翻转排序工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/html2markdown" class="">在线HTML/MarkDown相互转换工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/ipcalc" class="">在线网络计算器|TCP/IP子网掩码计算与换算工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/colortext" class="">在线特效文字/彩色文字生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/shouxiezi" class="">在线钢笔手写体/手写字生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/ip_net_calc" class="">在线IP地址/子网掩码计算与转换工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/network_calc" class="">在线子网掩码换算与网络计算工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_beaut" class="">在线自动排版与转换工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_diff" class="">在线文本比较工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_quchong" class="">在线文本去重复工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/layoutit" class="">在线bootstrap可视化布局编辑工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_caihongzi" class="">在线彩虹文字/颜色渐变文字生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/txt_faguangzi" class="">在线发光字生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/advtools" class="">在线站长多功能开发工具箱</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/suijishu" class="">在线随机数字/字符串生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/tiaoxingma" class="">在线条形码(一维码)生成/实时预览工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/zh_paixu" class="">在线中英文根据首字母排序工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/whois" class="">在线网站域名whois查询工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/browser_info" class="">在线浏览器信息检测工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/rnd_password" class="">在线随机字符/随机密码生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/rnd_userinfo" class="">在线随机生成个人信息数据工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/rnd_num" class="">在线随机数生成工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/img_add_info" class="">在线图片添加/解密隐藏信息(隐写术)工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/jb51_paiban" class="">在线文字/文本排版/转换工具(脚本之家加强版)</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/bt2mag" class="">在线BT种子torrent/磁性链接在线转换工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/bt_info" class="">在线BT种子torrent信息解析/转磁力链接magnet工具</a></li>
+				  					<li><span class=""></span><a href="http://tools.jb51.net/aideddesign/svg_editor" class="">SVG在线编辑器工具</a></li>
+				  					<li><span class=" caret-left"></span><a href="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具.html" class=" selected">在线动画演示插入/选择/冒泡/归并/希尔/快速排序算法过程工具</a></li>
+				        </ul>
+      		<li><a href="http://tools.jb51.net/jisuanqi" class=""><i class="fa fa-calculator"></i>在线计算器</a></li>
+      		<li><a href="http://tools.jb51.net/zhuanhuanqi" class=""><i class="fa fa-calculator"></i>度衡量换算</a></li>
+      		<li><a href="http://tools.jb51.net/baojian" class=""><i class="fa fa-user-md"></i>健康保健查询</a></li>
+      		<li><a href="http://tools.jb51.net/bianmin" class=""><i class="fa fa-user"></i>便民生活查询</a></li>
+      		<li><a href="http://tools.jb51.net/games" class=""><i class="fa fa-paper-plane"></i>休闲娱乐频道</a></li>
+          </ul>
+  
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">更新记录</div>
+      <div class="panel-body">
+        	2017.11.24:在线动画演示插入/选择/冒泡/归并/希尔/快速排序算法过程工具完成上线
+      </div>
+    </div>
+  	  
+  	    <div class="panel panel-default">
+      <script type="text/javascript">var cpro_id="u1645657";</script><script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/c.js" type="text/javascript"></script>
+
+    </div>         
+  </div>
+  
+  <div class="col-md-9">
+  
+  	     <ol class="breadcrumb">
+      <li><a href="http://tools.jb51.net/">首页</a></li>
+            <li><a href="http://tools.jb51.net/aideddesign">站长辅助工具</a></li>
+                  <li><a href="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具.html">在线动画演示插入/选择/冒泡/归并/希尔/快速排序算法过程工具</a></li>
+          </ol>  
+    
+      <h1 align="center">在线动画演示插入/选择/冒泡/归并/希尔/快速排序算法过程工具</h1>
+      <h2 class="alert alert-success" style="font-size:15px;">这是一款可在线动画演示各个常见排序算法的工具，搜集了插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序等排序算法的动画显示，并附带了较为详尽的排序算法说明，有助于读者更加直观深刻的理解与学习数据结构与算法中的常见排序算法。提供给需要的朋友免费使用。</h2>
+    <script async="" src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/adsbygoogle.js"></script><!-- tools_1000 --><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="8927361285"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <hr>
+
+     <iframe src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/index.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes" allowtransparency="yes" width="100%" height="600px" id="iframepage"></iframe>
+<hr>
+
+    			<h2 class="alert alert-warning">各种排序算法概要说明</h2>
+                <div class="alert alert-info" style="font-size:16px;">
+                <ol>
+				<li><strong>插入排序</strong>：插入排序基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)。是稳定的排序方法。插入排序的基本思想是：每步将一个待排序的纪录，按其关键码值的大小插入前面已经排序的文件中适当位置上，直到全部插入完为止。</li>
+				<li><strong>选择排序</strong>：选择排序（Selection sort）是一种简单直观的排序算法。它的工作原理是每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。 选择排序是不稳定的排序方法。</li>
+				<li><strong>冒泡排序</strong>：冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端。</li>
+				<li><strong>快速排序</strong>：快速排序（Quicksort）是对冒泡排序的一种改进。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</li>
+				<li><strong>归并排序</strong>：归并排序是建立在归并操作上的一种有效的排序算法,该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为二路归并。</li>
+				<li><strong>希尔排序</strong>：希尔排序(Shell Sort)是插入排序的一种。也称缩小增量排序，是直接插入排序算法的一种更高效的改进版本。希尔排序是非稳定排序算法。希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。</li>
+                </ol>
+				<p style="text-indent:2em">这款工具是旧金山大学的David Galles教授用HTML5+js制作的数据结构动画课件中算法动画比较部分。教授利用JS+HTML5 Canvas技术分别演示了6中数学排序算法的基本原理，即介绍了数学知识，又让这种教学变得饶有兴趣。通过这款工具我们可以借助动画演示的形式更加直观的了解上述插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序等几个排序算法的具体执行过程。</p>
+                </div>
+				<hr>
+				<h2 class="alert alert-warning">各种排序算法的时间、空间复杂度、稳定性对比分析</h2>
+				<div class="alert alert-info"><img src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/sort_compare.jpg" style="margin:0 auto;display: block;"></div>
+
+    <div style="font-size:16px; border: 2px solid #faebcc; border-radius: 4px; padding:10px; margin-top: 10px;"><img src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/s4.gif"> 首先，感谢您对脚本之家在线工具的支持！ <img src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/s5.gif"> 为回馈广大用户对脚本之家的关注，即日起脚本之家开展<font color="red"><strong>不定期红包大放送活动</strong></font>，只要扫描二维码关注本站微信公众平台即可参与活动领取口令红包【<a href="javascript:void(0);" onclick="document.getElementById(&#39;mask_view&#39;).style.display=&#39;block&#39;;centerModal(&#39;ds_code&#39;);">点击此处查看二维码</a>】</div><div id="mask_view" onclick="this.style.display=&#39;none&#39;;document.getElementById(&#39;ds_code&#39;).style.display=&#39;none&#39;;"> </div><div id="ds_code"><img src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/weixin.png"></div><hr><div class="adv-top"><script async="" src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/adsbygoogle.js"></script><!-- tools_1000 --><ins class="adsbygoogle" style="display:inline-block;width:970px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="8927361285"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div><br><script language="javascript" src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/adv_bottom.js"></script><div class="well">    
+        <hr>
+<div id="SOHUCS" sid="paixu_ys"></div> 
+<script type="text/javascript"> 
+
+/*(function(){ 
+var appid = 'cysUlpBwg'; 
+var conf = 'prod_307001f2f75b898226a72bcc8a87d842'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+*/
+</script>    
+    
+  </div>
+  
+</div>
+
+
+    </div> <!--end for container-->
+    
+    <div class="footer">
+        <hr>
+        <p align="center">Copyright © 2006-2017 <a href="http://tools.jb51.net/" target="_blank">工具之家</a>. All Rights Reserved. <a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank">苏ICP备14036222号</a></p>
+    </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/bootstrap.min.js"></script>
+    <!-- Sitejs -->
+    <script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/site.min.js"></script>
+	<script type="text/javascript" src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/jbLoader.js"></script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+    <div class="tongji"><script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/tongji.js"></script><div style="display:none;" class="hide">
+<script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/stat.php" language="JavaScript"></script><script src="./在线动画演示插入 选择 冒泡 归并 希尔 快速排序算法过程工具 - 站长辅助工具 - 脚本之家在线工具_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=2630830" target="_blank" title="站长统计">站长统计</a>
+</div>
+</div>
+  
+</div></body></html>

@@ -1,0 +1,12 @@
+
+Private Sub Command1_Click()
+s = 0
+For i = 1 To 100 Step 1
+If i Mod 2 = 1 Then
+  s = s + 1 / i
+ElseIf i Mod 2 = 0 Then
+  s = s - 1 / i
+End If
+Next i
+Text1.Text = Str(s)
+  

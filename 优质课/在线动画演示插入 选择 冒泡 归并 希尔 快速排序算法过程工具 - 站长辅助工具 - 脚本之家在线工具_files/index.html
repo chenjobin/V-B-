@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://tools.jb51.net/static/api/paixu_ys/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+		<title>各种排序算法动画演示过程 - HTML5实现的各种排序算法的动画比较</title>
+
+
+		<meta name="Keywords" content="在线工具,排序算法,动画演示排序算法,HTML动画演示,数据结构,插入排序,选择排序,冒泡排序,快速排序,归并排序,希尔排序">
+		<meta name="Description" content="在线工具，这是一款旧金山大学的David Galles教授用HTML5+js制作的数据结构动画课件中算法动画比较部分。教授利用JS+HTML5 Canvas技术分别演示了6中数学排序算法的基本原理，即介绍了数学知识，又让这种教学变得饶有兴趣。你可以看出HTML5技术将会在各个方法起到越来越重要的作用">
+		<link rel="stylesheet" href="http://tools.jb51.net/static/skin/css/jquery-ui.min.css">	
+		<script type="text/javascript" src="jquery.min(1).js"></script>
+		<script src="jquery-ui.min.js"></script>
+		
+		<script type="application/javascript" src="CustomEvents.js"> </script>
+		<script type="application/javascript" src="UndoFunctions.js"> </script>
+		<script type="application/javascript" src="AnimatedObject.js"> </script>
+		<script type="application/javascript" src="AnimatedLabel.js"> </script>
+		<script type="application/javascript" src="AnimatedCircle.js"> </script>
+		<script type="application/javascript" src="AnimatedRectangle.js"> </script>
+		<script type="application/javascript" src="AnimatedLinkedList.js"> </script>
+		<script type="application/javascript" src="HighlightCircle.js"> </script>
+		<script type="application/javascript" src="Line.js"> </script>
+		<script type="application/javascript" src="ObjectManager.js"> </script>
+		<script type="application/javascript" src="AnimationMain.js"> </script>
+		<script type="application/javascript" src="Algorithm.js"> </script>
+		<script type="application/javascript" src="ComparisonSort.js"> </script>
+	</head>  
+	<body marginwidth="0" marginheight="0">  
+		<div id="warp">
+
+			<div class="center">
+				<div id="mainContent" style="background-color:#FFFFDD;padding-top: 10px;"> 
+					<div id="algoControlSection" style="margin-left: 50px;">
+						<table id="AlgorithmSpecificControls"> <td><input type="Button" value="混排队列" name="混排队列"></td><td><input type="Button" value="插入排序" name="插入排序"></td><td><input type="Button" value="选择排序" name="选择排序"></td><td><input type="Button" value="冒泡排序" name="冒泡排序"></td><td><input type="Button" value="快速排序" name="快速排序"></td><td><input type="Button" value="归并排序" name="归并排序"></td><td><input type="Button" value="希尔排序" name="希尔排序"></td><td><input type="Button" value="调整队列大小" name="调整队列大小"></td></table> 
+					</div>
+					<canvas id="canvas" width="1000" height="500"></canvas>
+					
+					<div id="generalAnimationControlSection" style="margin-left: 50px;">
+						<table id="GeneralAnimationControls"><td><input type="Button" value="跳回最初" disabled=""></td><td><input type="Button" value="后退一步" disabled=""></td><td><input type="Button" value="暂停"></td><td><input type="Button" value="向前一步" disabled=""></td><td><input type="Button" value="跳到最后" disabled=""></td><td><table><tr><td><div display="inline-block" float="left" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:200px"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span></div></td></tr><tr><td align="center">动画速度</td></tr></table></td><td> 宽:</td><td><input type="Text" value="1000" size="4"></td><td>       高:</td><td><input type="Text" value="500" size="4"></td><td><input type="Button" value="调整画布大小"></td></table>		
+					</div>
+				</div>
+				<script type="text/javascript">init();</script>
+			</div>
+		</div>
+	  
+</body></html>

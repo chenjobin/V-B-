@@ -1,0 +1,21 @@
+假设密码是4位数字
+关键代码方法一FOR NEXT
+ 
+	dim a as integer
+	a=1234       '存放WIFI密码，假设密码是1234
+	dim b as integer    '变量用于与密码校对
+for b=1000 to 9999
+    if  b=a then
+	label1.caption="密码是："+str(b)    '显示WIFI密码
+     end if
+next b
+
+
+方法二： do while实现
+dim a as integer
+a=1234
+do while b<>a	'一直循环直到变量与WIFI密码相等为止
+	b=b+1
+loop
+
+label1.caption="密码是："+str(b)     '显示WIFI密码

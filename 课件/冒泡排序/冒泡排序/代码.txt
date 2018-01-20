@@ -1,0 +1,34 @@
+dim d(1 to 1000) as integer   '全局变量的数组，存储一系列数据
+dim num as integer
+
+Private Sub Command1_Click() '生成随机数按钮
+num = Val(Text1.Text)
+If num <= 0 Or num >= 1000 Then
+   Text1.Text = "数据个数不符合"
+else
+Randomize             '初始化随机函数
+List1.Clear
+For i = 1 To num
+ j = Round(Rnd * 1000)  'rnd函数生成一个[0，1)之间的随机数
+ List1.AddItem Str(j)
+ d(i) = j
+ Next
+end if
+End Sub
+
+Private Sub Command2_Click()  '冒泡排序按钮
+   List2.Clear
+For i = 1 To num - 1     '冒泡排序 递增
+   For j = num To i + 1 Step -1    '从低向上冒泡
+       If d(j) < d(j - 1) Then     ' 如果下个数据小，则于上一个数据交换
+         temp = d(j)
+         d(j) = d(j - 1)
+         d(j - 1) = temp
+        End If
+    Next j
+Next i
+For i = 1 To num       '在列表2中显示排序后的数据
+ List2.AddItem d(i)
+Next i
+End Sub
+
